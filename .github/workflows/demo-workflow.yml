@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: CI - Example of Workflow
 
 # Controls when the workflow will run
 on:
@@ -34,3 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+  test:
+    runs-on: alpine-latest
+    steps:
+      - name: Test 1
+        run: echo "Running test1"
+        
+      - name: Test 2
+        run: echo "Running test2"
